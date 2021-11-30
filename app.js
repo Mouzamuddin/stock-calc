@@ -31,7 +31,7 @@ function eventHandler() {
     var ip = Number(initial.value);
     var qty = Number(quantity.value);
     var curr = Number(current.value);
-    if(ip=="" || qty==""|| curr=="")
+    if(ip < 0 || qty < 0|| curr < 0)
     {
         showOutput('Please Enter Valid Inputs');
     }
